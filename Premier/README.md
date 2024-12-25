@@ -47,7 +47,7 @@ project-directory/
 - **Hover Effects**: Interactive hover effects for images and buttons.
 
 ## Preview
-[![Watch the Demo Video](https://drive.google.com/file/d/1Nt-3XjkviiO3XjngcOPQKPPhyDi2QanR/view?usp=sharing.jpg)](https://drive.google.com/file/d/1Nt-3XjkviiO3XjngcOPQKPPhyDi2QanR/view?usp=sharing?autoplay=1)
+[![Watch the Demo Video](https://drive.google.com/file/d/1HNclYdqK98FGR4Q5yldEj2qSQv4kTZae/view?usp=sharing.png)](https://drive.google.com/file/d/1Nt-3XjkviiO3XjngcOPQKPPhyDi2QanR/view?usp=sharing?autoplay=1)
 
 
 ## License
