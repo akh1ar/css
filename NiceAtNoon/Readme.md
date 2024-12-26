@@ -42,3 +42,28 @@ project-directory/
 2. Open the `index.html` file in a web browser to view the project.
 
 3. (Optional) Customize the content and images in the HTML and CSS files as needed for your own design studio.
+
+## Project Highlights
+
+- **Sleek Modern Design**: The website features a contemporary and minimalistic design, ideal for showcasing a design studio's creative portfolio.
+  
+- **Smooth Animations**: Engaging animations are used for page transitions, image effects, and interactive buttons, providing a dynamic and engaging browsing experience.
+
+- **Interactive Project Gallery**: A horizontal scrolling section allows visitors to explore the studio's design projects in a visually appealing way, with interactive hover effects.
+
+- **Custom Fonts**: The project utilizes the Apercu font, contributing to a clean and modern aesthetic.
+
+- **Optimized Performance**: The website is optimized for fast loading and smooth animations, ensuring high performance even on mobile devices.
+
+- **Easy Customization**: The HTML and CSS files are structured for easy customization, allowing quick updates to images, text, and sections to fit your specific design needs.
+
+## Preview
+[[Watch the Demo Video]](https://drive.google.com/file/d/1tXLY32aca2uI7sh5PZq1Ij93AFcZVNBX/view?usp=sharing?autoplay=1)
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
+Feel free to contribute or provide feedback to improve this project!
