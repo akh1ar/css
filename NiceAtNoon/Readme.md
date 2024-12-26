@@ -58,7 +58,7 @@ project-directory/
 - **Easy Customization**: The HTML and CSS files are structured for easy customization, allowing quick updates to images, text, and sections to fit your specific design needs.
 
 ## Preview
-[[Watch the Demo Video]](https://drive.google.com/file/d/1Nt-3XjkviiO3XjngcOPQKPPhyDi2QanR/view?usp=sharing?autoplay=1)
+[[Watch the Demo Video]](https://drive.google.com/file/d/1tXLY32aca2uI7sh5PZq1Ij93AFcZVNBX/view?usp=sharing?autoplay=1)
 
 ## License
 
