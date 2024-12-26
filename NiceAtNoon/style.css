@@ -1,0 +1,669 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: apercu;
+}
+
+@font-face {
+    font-family: apercu;
+    src: url(./font/apercu-r.woff2);
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background-color: #E4E4E4;
+}
+
+
+/* <----NAV---> */
+
+nav {
+    width: 100%;
+    height: 9vh;
+    padding: 0 10vh;
+}
+
+#nav-padd {
+    width: 100%;
+    height: 100%;
+    padding: 2vh 0vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#nav-svg {
+    width: 51%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-svg1 {
+    width: 11vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#nav-svg2 {
+    width: 2.7vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#nav-svg2 img {
+    animation: rotate-animation 9s linear infinite;
+}
+
+@keyframes rotate-animation {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#menu-section {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 1vw;
+}
+
+#menu-section a {
+    padding: 0.6vw 1vw;
+    border: 1px solid #000;
+    text-decoration: none;
+    font-size: 1.1vw;
+    color: #000;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+
+}
+
+#menu-section a:nth-last-child(1) {
+    text-decoration: underline;
+}
+
+#menu-section a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+/* <---Center---> */
+#center {
+    height: 55%;
+    width: 100%;
+    /* background-color: red; */
+    padding: 3vw 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#center-left {
+    width: 60%;
+    height: 100%;
+    /* background-color: crimson; */
+}
+
+#center-left p span {
+    display: inline-block;
+    /* Ensure inline elements behave as blocks for transform */
+    font-family: larken;
+    font-weight: 500;
+    font-size: 125px;
+    line-height: 0.8;
+    opacity: 0;
+    transform: translateY(100px);
+    animation: slideUp 1s ease-in-out forwards;
+}
+
+/*animation delays */
+#center-left p span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+#center-left p span:nth-child(2) {
+    animation-delay: 0s;
+}
+
+#center-left p span:nth-child(3) {
+    animation-delay: 0.1s;
+}
+
+#center-left p span:nth-child(4) {
+    animation-delay: 0.1s;
+}
+
+#center-left p span:nth-child(5) {
+    animation-delay: 0.3s;
+}
+
+#center-left p span:nth-child(6) {
+    animation-delay: 0.3s;
+}
+
+#center-left img {
+    margin-left: 18px;
+    margin-top: 30px;
+    height: 80px;
+    animation: rotate-animation 15s linear infinite;
+    vertical-align: middle;
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        /* End at the original position */
+    }
+}
+
+
+
+#center-right {
+    width: 20%;
+    height: 100%;
+    /* background-color: crimson; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#center-right-text {
+    width: 100%;
+    height: 30%;
+    /* background-color: yellow; */
+    margin-top: 8vw;
+}
+
+#center-right-text p {
+    font-size: 1.11vw;
+}
+
+#center-right-button {
+    width: 70%;
+    height: 18%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+#center-right-button:hover {
+    border-radius: 25px;
+}
+
+.button-text {
+    position: relative;
+}
+
+.button-text::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.5s ease;
+}
+
+#center-right-button:hover .button-text::after {
+    width: 100%;
+}
+
+#center-right-button img {
+    height: 20px;
+    width: 15px;
+    transition: all ease 0.5s;
+
+}
+
+#center-right-button:hover img {
+    height: 30px;
+    width: 25px;
+}
+
+
+#img-scroll {
+    width: 100%;
+    height: 110%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #E4E4E4;
+}
+
+#contanier {
+    height: 100%;
+    width: 160%;
+    padding: 4vw 0;
+    display: inline-block;
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* background-color: red; */
+}
+
+#img-scroll img {
+    height: 98%;
+    width: 18.6%;
+    margin: 1vw;
+    border-radius: 100px;
+    object-fit: cover;
+    object-position: top;
+}
+
+@keyframes anime {
+    form {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#page2 {
+    height: 40%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2vw 14vw 2vw 4.6vw;
+    background-color: #E4E4E4;
+
+}
+
+#page2-text {
+    height: 60%;
+    width: 100%;
+    /* background-color: blue; */
+}
+
+#page2-text p{
+    font-size: 1.67vw;
+}
+
+#page2-button {
+    width: 17%;
+    height: 20%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.7vw;
+    border-radius: 12px;
+    transition: all ease 0.5s;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+#page2-button:hover {
+    border-radius: 25px;
+
+}
+
+.page2-button-text {
+    position: relative;
+}
+
+.page2-button-text::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.5s ease;
+}
+
+#page2-button:hover .page2-button-text::after {
+    width: 100%;
+}
+
+#page2-button i{
+    height: 20px;
+    width: 20px;
+    font-weight: 500;
+    transition: all ease 0.5s;
+
+}
+
+#page2-button:hover i{
+    transform: scale(1.3);
+}
+
+#page3{
+    background-color: #E4E4E4;
+    /* background-color: red; */
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+#page3-small-text{
+    margin-bottom: 3rem;
+}
+#page3-small-text h2{
+    font-size: 1.12rem;
+    font-weight: 400;
+}
+#page3-title{
+    position: relative;
+}
+#page3-title h2{
+    font-size: 8rem;
+    line-height: 0.9;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+}
+#page3-hangging{
+    position: absolute;
+    font-size: 1.1rem;
+    width: fit-content;
+    border-radius: 100px;
+    padding: 1.5vw;
+    background-color: #F4C727;
+    rotate: -11deg;
+    left: 63%;
+    top: 90%;
+}
+#page3-button-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 5vw;
+    /* background-color: red; */
+    margin-top: 1.3vw;
+}
+#page3-button {
+    width: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.1vw;
+    border-radius: 12px;
+    border: 1px solid #000;
+    transition: all ease 0.5s;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+#page3-button:hover {
+    border-radius: 25px;
+
+}
+
+.page3-button-text {
+    position: relative;
+}
+
+.page3-button-text::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.5s ease;
+}
+
+#page3-button:hover .page3-button-text::after {
+    width: 100%;
+}
+
+#page3-button i{
+    font-weight: 500;
+    transition: all ease 0.5s;
+
+}
+
+#page3-button:hover i{
+    transform: scale(1.3);
+}
+
+#page4{
+    background-color: #E4E4E4;
+    /* background-color: red; */
+    width: 100%;
+    height: 90%;
+    padding: 2vw 4vw;
+}
+#page4-img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://cdn.prod.website-files.com/648884be5f32a12e5da2392f/65492b562e62e676d4159713_NS_Wayfinding%20_%20NaN-p-2000.jpg);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+#page-hover-img {
+    height: 63%;
+    width: 27%;
+    background-image: url(https://cdn.prod.website-files.com/648884be5f32a12e5da2392f/65492b6d98261b9aedd2482e_NS_Logo-NaN-p-800.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 75px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.8s;
+}
+
+#page4-img:hover {
+    border-radius: 130px;
+}
+
+#page4-img:hover #page-hover-img {
+    opacity: 1;
+    visibility: visible;
+}
+
+#page4-selector{
+    background-color: #E4E4E4;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: flex-start;
+    padding-left: 4vw;
+}
+#page4-selector-text h1{
+    font-size: 1rem;
+    color: #A3A4A7;
+    font-weight: 500;
+}
+#page4-selector-text h2{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+#page4-selector-field{
+    margin-top: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1vw;
+}
+.page4-selector-field-text{
+    border: 1px solid #000;
+    font-size: 0.8rem;
+    padding: 0.2vw 0.7vw;
+    text-transform: uppercase;
+    border-radius: 8px;
+}
+
+
+
+#page5{
+    height: 110%;
+    width: 100%;
+    background-color: #E4E4E4;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1vw;
+    padding:  4vw 4vw 1vw 4vw;
+}
+
+
+#page5-left{
+    height: 100%;
+    width: 50%;
+    /* background-color: greenyellow; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#page5-left-img{
+    height: 80%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://cdn.prod.website-files.com/648884be5f32a12e5da2392f/65492b562e62e676d4159713_NS_Wayfinding%20_%20NaN-p-2000.jpg);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all ease 0.5s;
+
+}
+#page5-left-hover-img{
+    height: 70%;
+    width: 55%;
+    background-image: url(https://cdn.prod.website-files.com/648884be5f32a12e5da2392f/65492b6d98261b9aedd2482e_NS_Logo-NaN-p-800.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 75px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.8s;
+}
+#page5-left-img:hover {
+    border-radius: 130px;
+}
+
+#page5-left-img:hover #page5-left-hover-img {
+    opacity: 1;
+    visibility: visible;
+}
+
+#page5-left-selector-text h1{
+    font-size: 1rem;
+    color: #A3A4A7;
+    font-weight: 500;
+}
+#page5-left-selector-text h2{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+#page5-left-selector-field{
+    margin-top: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1vw;
+}
+.page5-left-selector-field-text{
+    border: 1px solid #000;
+    font-size: 0.8rem;
+    padding: 0.2vw 0.7vw;
+    text-transform: uppercase;
+    border-radius: 8px;
+}
+
+
+#page5-right{
+    height: 100%;
+    width: 50%;
+}
+#page5-right-img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://cdn.prod.website-files.com/648884be5f32a12e5da2392f/65492b562e62e676d4159713_NS_Wayfinding%20_%20NaN-p-2000.jpg);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+#page5-right-hover-img{
+    height: 55%;
+    width: 55%;
+    background-image: url(https://cdn.prod.website-files.com/648884be5f32a12e5da2392f/65492b6d98261b9aedd2482e_NS_Logo-NaN-p-800.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 75px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.8s;
+}
+#page5-right-img:hover {
+    border-radius: 130px;
+}
+
+#page5-right-img:hover #page5-right-hover-img {
+    opacity: 1;
+    visibility: visible;
+}
+#page5-bottom1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* background-color: red; */
+    background-color: #E4E4E4;
+
+}
+#page5-bottom-text1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 27vw;
+}
