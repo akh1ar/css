@@ -21,12 +21,13 @@ This project is a responsive grid-based webpage designed to showcase fashion con
 - **Remix Icon Library**: For adding scalable icons.
 - **Font Styling**: Gilroy (or fallback fonts).
 
-## Project Structure
+```
 project-directory/
 ├── index.html   # Main HTML file
 ├── styles.css   # CSS file with all styles
 ├── model.mp4      # model video use in project
 └── README.md    # Project documentation
+```
 
 ## How to Run
 
