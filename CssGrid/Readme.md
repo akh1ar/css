@@ -52,7 +52,8 @@ project-directory/
   Fully responsive grid-based layout, ensuring usability across devices of all sizes.
 
 ## Preview
-
+![Pricing Page Preview](https://github.com/akh1ar/Web-Devlopment/blob/941d269eafbb0c73233e7b891fa3d29052c5c5fb/images/Cssgrid/mobile.png)
+![Pricing Page Preview](https://github.com/akh1ar/Web-Devlopment/blob/941d269eafbb0c73233e7b891fa3d29052c5c5fb/images/Cssgrid/web.png)
 
 ## License
 
