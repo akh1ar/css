@@ -52,3 +52,12 @@ project-directory/
   Fully responsive grid-based layout, ensuring usability across devices of all sizes.
 
 ## Preview
+
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
+Feel free to contribute or provide feedback to improve this project!
